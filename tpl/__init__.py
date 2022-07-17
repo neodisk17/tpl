@@ -65,6 +65,8 @@ def main(*args):
     j_env = jinja2.Environment(
         extensions=['jinja2.ext.do', 'jinja2.ext.loopcontrols'],
         keep_trailing_newline=True,
+        lstrip_blocks=True,
+        trim_blocks=True
     )
 
     # create template
